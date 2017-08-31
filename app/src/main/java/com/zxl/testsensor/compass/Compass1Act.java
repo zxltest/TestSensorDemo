@@ -18,7 +18,7 @@ import com.zxl.testsensor.R;
  *
  * @author tangliang
  */
-public class ThirdActivity extends Activity {
+public class Compass1Act extends Activity {
 
     private SensorManager mSensorManager;
     private Sensor mSensor;
@@ -30,7 +30,7 @@ public class ThirdActivity extends Activity {
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        setContentView(R.layout.act_third);
+        setContentView(R.layout.act_compass1);
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
         mView = (SampleView) findViewById(R.id.sampleview01);
@@ -85,8 +85,8 @@ public class ThirdActivity extends Activity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onPause() {
+        super.onPause();
         mSensorManager.unregisterListener(mListener);
     }
 

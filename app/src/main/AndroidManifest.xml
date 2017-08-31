@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".shake.SecondActivity" />
-        <activity android:name=".compass.ThirdActivity" />
+        <activity android:name=".compass.Compass1Act" />
+        <activity android:name=".compass.Compass2Act" />
     </application>
 
 </manifest>
